@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discovery Log</title>
+
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/log.css">
+    <link rel="stylesheet" href="./css/floatingWindow.css">
+    <script src="./js/exmaple.js"></script>
+</head>
+
+<nav>
+    <ul>
+        <li>
+            <a href="./index.html">Homepage</a>
+        </li>
+        <li class="navActive">
+            <a href="./log.html">Discovery Log</a>
+        </li>
+        <li>
+            <a href="./litReview.html">Literature Review</a>
+        </li>
+        <li>
+            <a href="./gallery.html">Gallery</a>
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Introduction</h1>
+    <p>This page is about what I have learnt at University while studying software engineering</p>
+</header>
+
+<article>
+    <h2>Web Addressing</h2>
+    <h3>Links and URLS</h3>
+    <p>Related Hypertext (HTML) documents can be navigated through links in pages.</p>
+    <p>Links are usually shown as descriptive text, and link to some web source.</p>
+    <p>The "location" of the source is a Uniform Resource Locator.</p>
+
+    <h3>Scheme</h3>
+    <p>The scheme part of the URL indicates the format in which the request should be sent. </p>
+    <p>Commonly supported ones are: </p>
+    <ul>
+        <li>ftp://</li>
+        <li>http://</li>
+        <li>https://</li>
+        <li>file://</li>
+        <li>mailto://</li>
+    </ul>
+
+    <h3>Host Names</h3>
+    <p>Hostnames can be local example 'localhost' and also global example
+        <a href="http://www.port.ac.uk">'port.ac.uk'</a> Every computer on the internet has a unique IP address. Global internet hostnames are translated to IP
+        addressing using the Domain Name System (DNS). Due to this you can also use the IP address in the URL instead of the hostname
+    </p>
+
+    <h3>Domain Name Service (DNS)</h3>
+    <p>This is a global record of domains to IP addresses. Until recently, domains were allocated under countries.</p>
+
+    <ul>
+        <li>.com &#8592; US or International</li>
+        <li>.uk &#8592; UK, previously restricted to third level:
+            <ul>
+                <li>.co.uk</li>
+                <li>.ac.uk</li>
+                <li>.nhs.uk</li>
+            </ul>
+        </li>
+    </ul>
+</article>
+
+<article>
+
+    <h2>Design</h2>
+    <h3>Technical & Architectural Design</h3>
+    <p>Different Examples:</p>
+    <ul>
+        <li>Filesystem Design</li>
+        <li>Access Control</li>
+        <li>Hierachic Content</li>
+        <li>Common Meida</li>
+        <li>Web Standards</li>
+        <li>Client Hardware and Environment</li>
+        <li>Expected Load</li>
+        <li>Size</li>
+    </ul>
+</article>
+
+<article>
+    <h2>SVG</h2>
+    <h3>Compression</h3>
+    <h4>Graphical Interchange Format (GIF)</h4>
+    <p>used on websites for low frame rate animated videos. As time progressed GIFs have started to use higher frame rates.</p>
+    <ul>
+        <li>256 Colours (Selected out of 16 Million)</li>
+        <li>1 Transparent background colour</li>
+        <li>Supports animation</li>
+    </ul>
+
+    <h4>Portable Network Graph (PNG)</h4>
+    <ul>
+        <li>Lossless 16 Million (24 - bit) colours</li>
+        <li>8 - bit transparency</li>
+    </ul>
+
+    <h4>Joint Photographic Experts Group (JPEG)</h4>
+    <ul>
+        <li>For photographs, smooth images, lossy</li>
+        <li>No transparency</li>
+    </ul>
+
+    <h4>File Comparison</h4>
+    <ul>
+        <li>GIF &#8594;28kb</li>
+        <li>PNG &#8594;137kb</li>
+        <li>JPEG &#8594;27kb</li>
+    </ul>
+
+    <h4>Basic Drawing Elements</h4>
+    <ul>
+        <li>Line (x1 y1 x2 y2)</li>
+        <li>Rect (x y width height)</li>
+        <li>Circle (cx cy r)</li>
+        <li>Polygon (points)</li>
+        <li>Polyline (points)</li>
+    </ul>
+</article>
+
+<article>
+    <h2>Javascript</h2>
+    <p>Is modern, powerful and a fast programming language. However it is messy</p>
+    <p>Available in: </p>
+    <ul>
+        <li>Every Browser</li>
+        <li>In internet Servers</li>
+        <li>In google apps</li>
+    </ul>
+    <section id=codeExample>
+        <h2>Example</h2>
+        <p>Click on the box</p>
+        <canvas id="javascriptExample" onclick="example()"></canvas>
+        <h3>Code</h3>
+        <!-- This is used as code needs to be formatted a certain way to be properly read. -->
+        <pre>
+    function example(){
+       // Get the canvas from the page
+       let window = document.getElementById("javascriptExample");
+       window.style.backgroundColor = getRandomColor();
+      }
+    // Creates a hex color
+    function getRandomColor() {
+      // All the different elements in a hex color
+      let letters = '0123456789ABCDEF';
+      // The start of the hex color
+      let color = '#';
+      // Length of the hex color
+      for (let i = 0; i &lt; 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+      }
+    </pre>
+    </section>
+</article>
+
+<article>
+    <h2>CSS and Advanced CSS</h2>
+    <h3>Introduction</h3>
+    <p>CSS is used on nearly all webpages to be able to control the style of the HTML elements within the webpage</p>
+
+</article>
+
+<article>
+    <h2>Standards</h2>
+    <h3>Introduction</h3>
+    <p>Standards are a way of making sure that same type of components will work with each other.</p>
+    <h3>Examples</h3>
+    <p>There are many different examples of standardization around the world. Here are some examples:</p>
+    <ul>
+        <li>Plugs no matter where in the UK will work with plug sockets.</li>
+        <li>Measurements will be the same throughout the world</li>
+        <li>Protocols on computers will be the same to allow for communication between computers.</li>
+    </ul>
+    <h3>Why have standards?</h3>
+    <p>Standards allow for new inventions to work with current inventions. An example of this can be if a website was going to
+        be created they know what the standards are for the internet. They can create the website to correctly work with the current
+        protocols. This will mean that they will be able to make the website work on all different types of computers. </p>
+</article>
+
+<footer>
+    <ul>
+        <li>
+            <a href="http://validator.w3.org/check/referer" rel="nofollow">Validate</a>
+        </li>
+    </ul>
+</footer>
+
+</html>
+

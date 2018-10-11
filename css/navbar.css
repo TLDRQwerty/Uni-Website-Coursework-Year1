@@ -1,0 +1,69 @@
+/* NAVIGATION BAR */
+nav > ul > li > a, footer > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul :hover, footer > ul :hover {
+    background-color: gray;
+}
+
+nav > ul , footer > ul{
+    margin: 0px;
+    text-align: left;
+    padding: 0px
+}
+
+footer > ul {
+    text-align: center;;
+}
+
+nav > ul > li, footer > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    background: darkgray;
+    font-size: initial;
+}
+
+nav, footer {
+    border: 1px solid black;
+    top: 0px;
+    left: 0px;
+    font-size: 0;
+    position: sticky;
+    background: darkgray;
+    z-index: 1;
+}
+
+@media (max-width: 699px){
+    nav{ 
+        position: initial;
+        bottom: initial;
+    }
+
+    nav > ul {
+        text-align: center;
+    }
+    
+    footer{
+        bottom: 0px;
+        position: static;
+        width: 100%;
+        top: initial;
+        left: initial;
+    }
+}
+
+.navActive{
+    background-color: lightgray;
+}
+
+@media (max-width: 455px){
+    nav > ul > li{
+        border: dotted 2px black;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+}
+

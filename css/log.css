@@ -1,0 +1,44 @@
+article , header {
+    border: black solid 2px;
+    margin: 2%;
+    /* margin-top: 2%; */
+}
+
+#javascriptExample{
+    width: 90%;
+    border: black dotted 2px;
+    margin-bottom: 2%;
+}
+
+pre {
+    text-align: left;
+    background-color: white;
+    margin: 2%;
+    white-space: pre-warp;
+}
+
+#codeExample{
+    border: black 2px dotted;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+p {
+    padding-left: 2%;
+    text-align: left;
+}
+
+ul {
+    /* padding-left: 4%; */
+    text-align: left;
+}
+
+pre{
+    resize: both;
+    overflow: auto;
+}
+
+section > p {
+    text-align: center;
+}
